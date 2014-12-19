@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12664,7 +12664,7 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="0.22"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="LED1" library="led" deviceset="LED" device="5MM"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIPLED_1206"/>
 <part name="Q1" library="transistor-fet" deviceset="SPP80P06P" device=""/>
 <part name="C1" library="resistor" deviceset="CPOL-US" device="153CLV-0505"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805"/>
