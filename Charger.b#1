@@ -1592,7 +1592,7 @@ design rules under a new name.</description>
 <elements>
 <element name="U$1" library="mcp73841" package="MSOP10" value="MCP73841" x="13.45" y="13.16" rot="MR0"/>
 <element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="3.51" y="7.51" rot="R90"/>
-<element name="R1" library="resistor" package="R0805" value="0.5" x="20.54" y="11.11" rot="MR270"/>
+<element name="R1" library="resistor" package="R0805" value="0.22" x="20.54" y="11.11" rot="MR270"/>
 <element name="R2" library="resistor" package="R0805" value="100k" x="13.44" y="5.71" rot="MR90"/>
 <element name="LED1" library="led" package="CHIPLED_1206" value="" x="19.42" y="5.51" rot="MR180"/>
 <element name="Q1" library="transistor-fet" package="TO220" value="SPP80P06P" x="23.39" y="13.93" rot="R270"/>
@@ -1602,9 +1602,9 @@ design rules under a new name.</description>
 <element name="R3" library="resistor" package="R0805" value="18k" x="10.33" y="11.06" rot="MR270"/>
 <element name="R4" library="resistor" package="R0805" value="10k" x="7.13" y="11.07" rot="MR90"/>
 <element name="R5" library="resistor" package="R0805" value="510" x="16.58" y="5.81" rot="MR90"/>
-<element name="INPUT" library="pinhead" package="1X02" value="" x="3.68" y="16.87" rot="R270"/>
-<element name="BATTERY" library="pinhead" package="1X02" value="" x="23.37" y="16.97" rot="R90"/>
-<element name="R6" library="resistor" package="R0805" value="0.5" x="23.5" y="11.1" rot="MR270"/>
+<element name="JP1" library="pinhead" package="1X02" value="" x="3.68" y="16.87" rot="R270"/>
+<element name="JP2" library="pinhead" package="1X02" value="" x="23.37" y="16.97" rot="R90"/>
+<element name="R6" library="resistor" package="R0805" value="0.22" x="23.5" y="11.1" rot="MR270"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1664,7 +1664,7 @@ design rules under a new name.</description>
 <contactref element="Q1" pad="2"/>
 <contactref element="U$1" pad="9"/>
 <contactref element="C1" pad="+"/>
-<contactref element="BATTERY" pad="1"/>
+<contactref element="JP2" pad="1"/>
 <wire x1="23.35" y1="15.7" x2="23.37" y2="15.7" width="0.3048" layer="16"/>
 <wire x1="13.95" y1="15.2731" x2="13.95" y2="13.88315625" width="0.3048" layer="16"/>
 <wire x1="13.95" y1="13.88315625" x2="17.1" y2="13.879734375" width="0.3048" layer="16"/>
@@ -1693,8 +1693,8 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C3" pad="-"/>
 <contactref element="R4" pad="1"/>
-<contactref element="BATTERY" pad="2"/>
-<contactref element="INPUT" pad="1"/>
+<contactref element="JP2" pad="2"/>
+<contactref element="JP1" pad="1"/>
 <wire x1="23.359665625" y1="18.24" x2="23.37" y2="18.24" width="0.3048" layer="16"/>
 <wire x1="14.8" y1="20.61" x2="23.359665625" y2="20.602309375" width="0.3048" layer="16"/>
 <wire x1="23.359665625" y1="20.602309375" x2="23.359665625" y2="18.24" width="0.3048" layer="16"/>
@@ -1765,7 +1765,7 @@ design rules under a new name.</description>
 <wire x1="16.48" y1="6.7" x2="16.58" y2="6.66" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$10">
-<contactref element="INPUT" pad="2"/>
+<contactref element="JP1" pad="2"/>
 <contactref element="D1" pad="A"/>
 <wire x1="3.68" y1="15.6" x2="3.51" y2="15.6" width="0.3048" layer="16"/>
 <wire x1="3.51" y1="15.6" x2="3.51" y2="12.59" width="0.3048" layer="16"/>
