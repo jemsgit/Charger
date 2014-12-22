@@ -12662,25 +12662,24 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 <parts>
 <part name="U$1" library="mcp73841" deviceset="MCP73841" device=""/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="0.5"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="0.22"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_1206"/>
 <part name="Q1" library="transistor-fet" deviceset="SPP80P06P" device=""/>
-<part name="C1" library="resistor" deviceset="CPOL-US" device="153CLV-0505" value="4.7u"/>
-<part name="C2" library="resistor" deviceset="C-US" device="C0805" value="0.22u"/>
+<part name="C1" library="resistor" deviceset="CPOL-US" device="153CLV-0505"/>
+<part name="C2" library="resistor" deviceset="C-US" device="C0805"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="resistor" deviceset="CPOL-US" device="153CLV-0505" value="4.7u"/>
+<part name="C3" library="resistor" deviceset="CPOL-US" device="153CLV-0505"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="R0805" value="18k"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="R0805" value="510"/>
-<part name="INPUT" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="BATTERY" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0805" value="0.5"/>
 </parts>
 <sheets>
 <sheet>
@@ -12703,11 +12702,10 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 <instance part="R4" gate="G$1" x="-20.32" y="-30.48" rot="R90"/>
 <instance part="GND4" gate="1" x="-20.32" y="-40.64"/>
 <instance part="R5" gate="G$1" x="-25.4" y="0"/>
-<instance part="INPUT" gate="G$1" x="-71.12" y="5.08" rot="R180"/>
-<instance part="BATTERY" gate="G$1" x="53.34" y="0"/>
+<instance part="JP1" gate="G$1" x="-71.12" y="5.08" rot="R180"/>
+<instance part="JP2" gate="G$1" x="53.34" y="0"/>
 <instance part="GND5" gate="1" x="45.72" y="-5.08"/>
 <instance part="GND6" gate="1" x="-63.5" y="-2.54"/>
-<instance part="R6" gate="G$1" x="-30.48" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -12719,8 +12717,7 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 <wire x1="-55.88" y1="5.08" x2="-48.26" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="2VDD"/>
 <wire x1="-48.26" y1="5.08" x2="-43.18" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="5.08" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="5.08" x2="-35.56" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="5.08" x2="-35.56" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="2.54" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="2.54" x2="-43.18" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-43.18" y="5.08"/>
@@ -12735,27 +12732,18 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 <pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="-48.26" y1="5.08" x2="-48.26" y2="2.54" width="0.1524" layer="91"/>
 <junction x="-48.26" y="5.08"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="10.16" x2="-38.1" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="10.16" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-38.1" y="5.08"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="1SENSE"/>
-<wire x1="-25.4" y1="5.08" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="5.08" x2="-20.32" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="-22.86" y1="5.08" x2="-20.32" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="5.08" x2="-17.78" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="15.24" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="15.24" x2="-20.32" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-20.32" y="5.08"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="-25.4" y1="10.16" x2="-22.86" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="10.16" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-22.86" y="5.08"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -12776,7 +12764,7 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 <wire x1="33.02" y1="-2.54" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
 <junction x="35.56" y="2.54"/>
-<pinref part="BATTERY" gate="G$1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12815,13 +12803,13 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="BATTERY" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="0" x2="45.72" y2="0" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="0" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="INPUT" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="-68.58" y1="2.54" x2="-63.5" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="2.54" x2="-63.5" y2="0" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -12872,7 +12860,7 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3619/SP
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="INPUT" gate="G$1" pin="2"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="-68.58" y1="5.08" x2="-60.96" y2="5.08" width="0.1524" layer="91"/>
 </segment>
